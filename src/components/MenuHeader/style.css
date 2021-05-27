@@ -1,0 +1,105 @@
+.menuHeader
+{
+    height: 40px;
+    width: 100%;
+    background-color: #fff;
+    /* background-color: #e02424; */
+
+    border-bottom: 1px solid #cecece;
+    box-shadow: 0 2px 2px -2px;
+}
+.menuHeader ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menuHeader > ul 
+{
+    display: flex;
+    margin:0 50px;
+    position: relative;
+}
+.menuHeader > ul > li >span
+{
+    display: block;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 14px; 
+}
+.menuHeader > ul > li >span:hover
+{
+    color: #2874f0;
+}
+.menuHeader > ul > li > ul 
+{
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    display: none;
+    border: 1px solid #cecece;
+}
+.menuHeader > ul > li:hover ul 
+{
+    display: block;
+}
+.menuHeader > ul > li > ul > li
+{
+    margin: 0 20px;
+    min-width: 150px;
+}
+.menuHeader > ul > li > ul > li
+{
+    float: left;
+}
+.menuHeader > ul > li > ul > li>a 
+{
+    font-weight: bold;
+    display: block;
+}
+.menuHeader > ul > li > ul > li a
+{
+    font-size: 12px;
+    text-decoration: none;
+    display: block;
+    padding: 3px 0;
+    color: #707070;
+} 
+
+
+
+@media  only screen and (max-width:462px) {
+ 
+.menuHeader > ul 
+{
+    display: flex;
+    margin:0 0px;
+    position: relative;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    /* flex-direction: column; */
+}
+.menuHeader
+{
+    min-height: 120px;
+    /* min-width:40px; */
+    width: 100%;
+    background-color: #fff;
+    /* background-color: #e02424; */
+
+    border-bottom: 1px solid #cecece;
+    box-shadow: 0 2px 2px -2px;
+}
+
+/* .menuHeader > ul > li >span
+{
+    display: block;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 14px; 
+} */
+
+}

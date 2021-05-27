@@ -1,0 +1,88 @@
+
+
+.imageContainer
+{
+    width: 150px;
+    height: 150px;
+    
+}
+.imageContainer img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.detailContainer
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+.detailContainer h5
+{
+    position: absolute;
+    top: 0%;
+}
+.detailContainer button 
+{
+    position:absolute;
+    bottom: 0;
+    padding-left: 7px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-right: 6px;
+}
+.address
+{
+    width: 30%;
+}
+.status
+{
+    width: 30%;
+}
+
+
+@media only screen and (max-width:850px)
+{
+    .order-list
+    {
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    }
+    .address
+    {
+    width: 30%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    }
+.status
+    {
+    width: 30%;
+    margin-top: 2rem;
+    }
+   
+    .price
+    {
+        margin-top: 1rem;
+    }
+    .detailContainer h5
+{
+    position: relative;
+    top: 0%;
+}
+.detailContainer button 
+{
+    position:relative;
+    bottom: 0;
+    padding-left: 7px;
+    padding-bottom: 2px;
+    padding-top: 1px;
+    padding-right: 6px;
+}
+
+}
