@@ -16,9 +16,7 @@ export default function CartPage() {
     const cart=useSelector(state=>state.cart);
   const dispatch = useDispatch();
     const user = useSelector(state => state.user)
-  useEffect(() => {
-      dispatch(fetchCartItems());
-  }, [])
+
   
   
   

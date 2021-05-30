@@ -7,7 +7,7 @@ import ProductListPage from './containers/ProductListPage';
 import OrderPage from './containers/orderPage';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { fetchAllOrders, isUserLoggedIn } from './actions';
+import { fetchAllOrders, fetchCartItems, isUserLoggedIn } from './actions';
 import BuyNowPage from './containers/BuyNowPage';
 function App() {
   const dispatch=useDispatch();
@@ -15,6 +15,7 @@ function App() {
   
     
     dispatch(isUserLoggedIn())
+    dispatch(fetchCartItems())
     
   }, [])
 

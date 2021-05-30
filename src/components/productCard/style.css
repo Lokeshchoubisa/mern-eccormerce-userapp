@@ -33,7 +33,19 @@
     font-size: 14px;
     margin:5px 0px;
 }
+.star
+{
+    overflow: hidden;
+    vertical-align: middle;
+    color: #ffc107;
+    font-size: 1.0rem;
+}
 
+.quantity
+{
+    /* background-color: grey; */
+    /* width: auto; */
+}
 .cartBuybuttons
 {
      display: flex;

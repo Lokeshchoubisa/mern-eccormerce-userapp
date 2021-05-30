@@ -27,7 +27,7 @@ export default function Header() {
   const [email,setEmail]=useState("")
   const [firstName,setFirstName ]=useState("");
   const [lastName,setLastName ]=useState("");
-  
+  const cart = useSelector(state => state.cart)
   const clickSignout=()=>
   {
     dispatch(SignoutAction())
@@ -158,7 +158,10 @@ export default function Header() {
   
   </div>
   {/* <IoCartOutline /> */}
+  <div className="cart d-flex">
   <a href="/user/cart"  className=""><IoCartOutline className="text-white"/></a>
+  <p>{cart.cartItems.length}</p>
+  </div>
   {/* <h5>Hello lokesh</h5> */}
 </Navbar>
 {renderLoginModal()}

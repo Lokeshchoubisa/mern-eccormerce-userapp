@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 // import { Button, Modal } from 'react-bootstrap';
 // import { propTypes } from 'react-bootstrap/esm/Image'
-import { IoSearch, IoCartOutline, IoCaretDownCircleOutline, IoBagRemoveSharp } from "react-icons/io5";
+import { IoSearch, IoCartOutline, IoCaretDownCircleOutline, IoBagRemoveSharp ,IoStarSharp} from "react-icons/io5";
 import { useDispatch, useSelector } from 'react-redux';
 // import Input from '../../../../admin-app/src/components/UI/input';
 import { addToCart, deleteCartItems, fetchCartItems, placeOrder } from '../../actions';
@@ -86,7 +86,7 @@ export default function Productcard(props) {
                
                <div  style={{marginBottom:"3rem"}} className="productContainer">
                 <div className="productImgContainer">
-                    <img src={"http://localhost:3000/public/" + props.productImages[0].img} alt="productImg"></img>
+                    <img src={props.productImages[0].img} alt="productImg"></img>
                 </div>
                 <div className="titleAndText">
                     <div style={{ margin: "5px" }}>{props.name}</div>
@@ -143,16 +143,18 @@ export default function Productcard(props) {
         <>
             <div className="productContainer">
                 <div className="productImgContainer">
-                    <img src={"http://localhost:3000/public/" + props.productImages[0].img} alt="productImg"></img>
+                    {/* <img src={"http://localhost:3000/public/" + props.productImages[0].img} alt="productImg"></img> */}
+                    <img src={props.productImages[0].img} alt="productImg"></img>
                 </div>
                 <div className="titleAndText">
                     <div style={{ margin: "5px" }}>{props.name}</div>
                     <div>
-                        <span>4.5</span>
+                        <IoStarSharp className="star" /> <IoStarSharp  className="star" /> <IoStarSharp className="star" />
                         {/* <span>345</span> */}
                     </div>
-                    <div>
-                        {props.quantity ? props.quantity : null}
+                    <div className="quantity">
+                        {/* <span>Quantity</span>
+                        <h6>{props.quantity}</h6> */}
                     </div>
 
                     <div className="productPrice">{props.price}</div>

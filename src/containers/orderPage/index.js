@@ -57,7 +57,7 @@ export default function OrderPage() {
                         <div style={{margin:"0rem 0  3rem 0" }}  className="order-list d-flex justify-content-between">  
                         
                         <div  className="imageContainer">
-                        <img src={pictureUrl + product.productId.productPicture[0].img}></img>
+                        <img src={product.productId.productPicture[0].img}></img>
                         </div>
                         <div className="detailContainer">
                          

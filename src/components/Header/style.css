@@ -9,6 +9,17 @@
     /* flex-direction: column; */
     /* flex-direction: row-reverse; */
 }
+.cart p
+{
+    height: 22px;
+    width: 21px;
+    background-color: #c91212;
+    border-radius: 50%;
+    display: inline-block;
+    transform: translateX(-6px);
+    text-align: center;
+    color: white;
+}
 .icon
 {
     font-family: monospace;

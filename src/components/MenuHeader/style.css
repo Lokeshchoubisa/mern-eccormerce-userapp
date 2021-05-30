@@ -70,7 +70,7 @@
 
 
 
-@media  only screen and (max-width:462px) {
+@media  only screen and (max-width:450px) {
  
 .menuHeader > ul 
 {
@@ -78,19 +78,23 @@
     margin:0 0px;
     position: relative;
     flex-wrap: wrap;
+    flex-direction: column;
+    
     /* justify-content: center; */
     /* flex-direction: column; */
 }
 .menuHeader
 {
-    min-height: 120px;
+    min-height: 100px;
     /* min-width:40px; */
+    overflow: scroll;
     width: 100%;
     background-color: #fff;
     /* background-color: #e02424; */
 
     border-bottom: 1px solid #cecece;
     box-shadow: 0 2px 2px -2px;
+
 }
 
 /* .menuHeader > ul > li >span
